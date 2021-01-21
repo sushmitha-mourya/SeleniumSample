@@ -2,15 +2,15 @@ package tests;
 
 import java.io.IOException;
 
-
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.SignInPage;
 import utils.TestBase;
 
-public class TestLoginPage extends TestBase {
-
+public class MainTest extends TestBase{
+	
 	
 	
 	@Test
@@ -20,15 +20,18 @@ public class TestLoginPage extends TestBase {
 		driver.get("https://www.booking.com");
 		
 		HomePage hp = new HomePage(driver);
-		hp.signIn().click();
+	//	hp.searchPlace().sendKeys("Chicago");
+	
 		
-		SignInPage sp = new SignInPage(driver);
-		sp.username().sendKeys("sushmithamj2@gmail.com");
-		sp.submit().click();
-		sp.password().sendKeys("Sushmitha@123");
-		sp.login().click();
+		
+		
+		
+		
+		
 		
 
+
 	}
+
 
 }
